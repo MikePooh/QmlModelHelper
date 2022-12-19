@@ -248,8 +248,7 @@ void ModelHelper::removeMapper(QObject* mapper)
 }
 
 void registerModelHelperTypes() {
-    qmlRegisterAnonymousType<QQmlPropertyMap>("ModelHelper", 0);
-//    qmlRegisterType<QQmlPropertyMap>();
+    qmlRegisterType<QQmlPropertyMap>();
     qmlRegisterUncreatableType<ModelHelper>("ModelHelper", 0, 1, "ModelHelper", "ModelHelper is only available via attached properties");
 }
 

@@ -5,8 +5,20 @@ Access your models from QML without views or delegates
 
 Installation
 ------------
+With QMake
+
 1. clone or download this repository
+
 2. add `include  (<path/to/QmlModelHelper>/QmlModelHelper.pri)` in your `.pro`
+
+3. `import ModelHelper 0.1` to use this library in your QML files
+
+With Cmake
+
+1. clone or download this repository
+
+2. add `add_subdirectory(QmlModelHelper)` to your `CMakeLists.txt`
+
 3. `import ModelHelper 0.1` to use this library in your QML files
 
 Motivation
