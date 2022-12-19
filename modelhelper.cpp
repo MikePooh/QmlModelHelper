@@ -1,6 +1,6 @@
 #include "modelhelper.h"
 #include <QCoreApplication>
-#include <QQmlInfo>
+#include <QtQml/QQmlInfo>
 #include <QPersistentModelIndex>
 
 class ModelHelperPropertyMap : public QQmlPropertyMap
@@ -248,7 +248,8 @@ void ModelHelper::removeMapper(QObject* mapper)
 }
 
 void registerModelHelperTypes() {
-    qmlRegisterType<QQmlPropertyMap>();
+    qmlRegisterAnonymousType<QQmlPropertyMap>("ModelHelper", 0);
+//    qmlRegisterType<QQmlPropertyMap>();
     qmlRegisterUncreatableType<ModelHelper>("ModelHelper", 0, 1, "ModelHelper", "ModelHelper is only available via attached properties");
 }
 

@@ -3,8 +3,8 @@
 
 #include <QObject>
 #include <QAbstractItemModel>
-#include <qqml.h>
-#include <QQmlPropertyMap>
+#include <QtQml/qqml.h>
+#include <QtQml/QQmlPropertyMap>
 
 class ModelHelper : public QObject
 {
